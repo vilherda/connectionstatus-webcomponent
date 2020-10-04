@@ -1,0 +1,16 @@
+{
+  "name": "connectionstatus-webcomponent",
+  "version": "1.0.0",
+  "description": "Web component wich helps to detect if the browser has connectivity or not",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vilherda/connectionstatus-webcomponent.git"
+  },
+  "author": "vilherda@gmail.com",
+  "license": "CC0 1.0 Universal",
+  "bugs": {
+    "url": "https://github.com/vilherda/connectionstatus-webcomponent/issues"
+  },
+  "homepage": "https://github.com/vilherda/connectionstatus-webcomponent"
+}

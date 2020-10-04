@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo</title>
+    <script src="connectionstatus.js"></script>
+    <script>
+        window.addEventListener('connection-status-changed', (event) => {
+            console.info(event);
+            document.getElementById('connection_info').innerHTML = "Connected: " + event.detail;
+        });
+    </script>
+</head>
+<body>
+    <connection-status  />
+    <div id="connection_info"></div>
+</body>
+</html>
