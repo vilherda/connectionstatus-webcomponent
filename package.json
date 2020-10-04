@@ -1,7 +1,7 @@
 {
   "name": "connectionstatus-webcomponent",
   "version": "1.0.0",
-  "description": "Web component wich helps to detect if the browser has connectivity or not",
+  "description": "Web component which helps to detect if the browser has connectivity or not",
   "main": "index.js",
   "repository": {
     "type": "git",
