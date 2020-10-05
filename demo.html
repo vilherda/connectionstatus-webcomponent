@@ -7,7 +7,6 @@
     <script src="connectionstatus.js"></script>
     <script>
         window.addEventListener(CONNECTION_STATUS_EVENT_NAME, (event) => {
-            console.info(event);
             document.getElementById('connection_info').innerHTML = "Connected: " + event.detail;
         });
     </script>

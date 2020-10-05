@@ -5,7 +5,7 @@ const INTERESTING_EVENTS_NAMES = [LOAD_EVENT_NAME, ONLINE_EVENT_NAME, OFFLINE_EV
 const CONNECTION_STATUS_EVENT_NAME = 'connection-status-changed';
 
 function triggerEvent(element, status) {
-    const event2launch = new CustomEvent(CONNECTION_STATUS_EVENT_NAME, { detail: status });
+    const event2launch = new CustomEvent(CONNECTION_STATUS_EVENT_NAME, { bubbles: true, composed: true, detail: status });
     element.dispatchEvent(event2launch);
 }
 
