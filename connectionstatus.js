@@ -7,7 +7,6 @@ const CONNECTION_STATUS_EVENT_NAME = 'connection-status-changed';
 function triggerEvent(element, status) {
     const event2launch = new CustomEvent(CONNECTION_STATUS_EVENT_NAME, { detail: status });
     element.dispatchEvent(event2launch);
-    console.info(status);
 }
 
 function generateHandler(element) {
@@ -21,7 +20,6 @@ class ConnectionStatus extends HTMLElement {
     constructor() {
         super();
         this.handler = generateHandler(this);
-        // window.customElements.define('connection-status', ConnectionStatus);
     }
     connectedCallback() {
         INTERESTING_EVENTS_NAMES.forEach((eventName) => {
