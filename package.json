@@ -1,6 +1,6 @@
 {
   "name": "connectionstatus-webcomponent",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Web component which helps to detect if the browser has connectivity or not",
   "main": "connectionstatus.js",
   "repository": {
