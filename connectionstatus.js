@@ -21,12 +21,13 @@ class ConnectionStatus extends HTMLElement {
         super();
         this.handler = generateHandler(this);
     }
+
     connectedCallback() {
         INTERESTING_EVENTS_NAMES.forEach((eventName) => {
             window.addEventListener(eventName, this.handler);
         });
-        Boolean()
-        triggerEvent(this, navigator.onLine || false);
+        const value = navigator.onLine == undefined || navigator.onLine == null ? false : navigator.onLine == true;
+        triggerEvent(this, value);
     }
 
     disconnectedCallback() {
